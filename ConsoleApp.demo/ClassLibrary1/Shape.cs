@@ -34,9 +34,33 @@ namespace ConsoleApp.Shapes
                 this.length = length;
                 this.width = width;
             }
-#endregion constructors
+        #endregion constructors
 
-
+        #region property
+        public int Length
+        {
+            get
+            {
+                return length;
+            }
+            set
+            {
+                length = value;
+            }
+        }
+        public int Width
+        {
+            get
+            {
+                return width;
+            }
+            set
+            {
+                width = value;
+            }
+            
+        }
+        #endregion property
 
         #region methods
         /// <summary>

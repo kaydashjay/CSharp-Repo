@@ -10,7 +10,6 @@ namespace ConsoleApp.Shapes
     {
         public ShapeZeroAreaException(string message) : base(message)
         {
-            Console.WriteLine(message);
 
         }
     }

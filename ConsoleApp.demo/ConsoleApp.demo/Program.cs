@@ -86,9 +86,14 @@ namespace ConsoleApp.demo
                 Console.WriteLine(item.Area());
                 Console.WriteLine(item.ToString());
             }
-
+            Circle c = Circle.GetCircle;
+            c.Radius = 2;
+            Circle c1 = Circle.GetCircle;
+            Console.WriteLine(c.Area());
+            
             Dictionary<string, Shape> dict = new Dictionary<string, Shape>();
             //dict.
+
             Console.ReadLine();
 
 
