@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp.demo", "ConsoleApp.demo\ConsoleApp.demo.csproj", "{BD83B048-2CDC-42CD-A297-2FFFF5448EF8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp.Shapes", "ClassLibrary1\ConsoleApp.Shapes.csproj", "{674F07B0-CB9C-4102-AE52-5DF80F73E071}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serializer", "Serializer\Serializer.csproj", "{7C1B03C5-A374-4A91-BED1-FEE75FF2376F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{674F07B0-CB9C-4102-AE52-5DF80F73E071}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{674F07B0-CB9C-4102-AE52-5DF80F73E071}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{674F07B0-CB9C-4102-AE52-5DF80F73E071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C1B03C5-A374-4A91-BED1-FEE75FF2376F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C1B03C5-A374-4A91-BED1-FEE75FF2376F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C1B03C5-A374-4A91-BED1-FEE75FF2376F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C1B03C5-A374-4A91-BED1-FEE75FF2376F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

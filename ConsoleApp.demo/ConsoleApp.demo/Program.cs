@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ConsoleApp.Shapes;
+using Serializer;
 
 
 namespace ConsoleApp.demo
@@ -11,7 +12,7 @@ namespace ConsoleApp.demo
 
     class Program
     {
-        //privat evariables
+       ///privat evariables
         private static int num = 10;
 
         public static int GetNum()
@@ -21,7 +22,29 @@ namespace ConsoleApp.demo
 
         static void Main(string[] args)
         {
-            #region Inheritence Try/Catch
+
+            ShapeDTO dto = new ShapeDTO(2, 3);
+
+            var jsonString = ShapeSerializer.ShapeToJSON(dto); //makes object into JSON
+            Console.WriteLine($"Serialized to JSON {jsonString}"); 
+
+            var output = ShapeSerializer.JSONToShape(jsonString); //makes the string an object again
+      
+            Shape s = new Shape(output.height, output.width);
+
+            Console.WriteLine($"Shape area is {s.Area()}");
+
+
+            var xmlstring = ShapeSerializer.ShapeToXML(dto);
+            Console.WriteLine($"Serialized to XML {xmlstring}");
+
+            var xmloutput = ShapeSerializer.XMLtoShape(xmlstring);
+
+            Shape shape = new Rectangle(xmloutput.width, xmloutput.height);
+            Console.WriteLine($"Rectangle Area is {shape.Area()}");
+
+
+           /* #region Inheritence Try/Catch
             Shape rect = new Rectangle (1, 2);
             Shape square = new Square(4);
             Shape triangle = new Triangle(3, 3);
@@ -93,6 +116,7 @@ namespace ConsoleApp.demo
             
             Dictionary<string, Shape> dict = new Dictionary<string, Shape>();
             //dict.
+            */
 
             Console.ReadLine();
 

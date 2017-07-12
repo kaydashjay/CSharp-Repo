@@ -3,15 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
+
 
 namespace ConsoleApp.Shapes
 {/// <summary>
 /// a shape class
 /// </summary>
+[DataContract]
         public class Shape :IShape
         {
         //fields or variables
+        [DataMember]
         private int length;
+        [DataMember]
         private int width;
         #region constructors
         /// <summary>

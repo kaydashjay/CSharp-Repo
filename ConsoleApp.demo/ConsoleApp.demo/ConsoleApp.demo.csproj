@@ -53,6 +53,10 @@
       <Project>{674f07b0-cb9c-4102-ae52-5df80f73e071}</Project>
       <Name>ConsoleApp.Shapes</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Serializer\Serializer.csproj">
+      <Project>{7c1b03c5-a374-4a91-bed1-fee75ff2376f}</Project>
+      <Name>Serializer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
